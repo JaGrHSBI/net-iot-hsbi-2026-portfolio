@@ -18,7 +18,7 @@ We are Sven and Jan.
 
 ### Pre-study artefact
 
-[PreStudy-artefact](../PreStudy/pictures/mqtt-screenshot.png)
+![PreStudy-artefact](../PreStudy/pictures/mqtt-screenshot.png)
 
 We talked about tracepath and MQTT-screenshots  
 I previously didn't know different kinds of IP-addresses exist (IPv4 vs IPv6). Only actually looking at my ipconfig made me think about that.  
@@ -59,9 +59,6 @@ It is interesting how some protocols try to bypass the traditional layer boundar
 
 We really liked the overview this table gives over how OSI relates to TCP, Sebastian originally showed it to us.  
 [Link](https://github.com/SebasAbt/IOT_Baseline/tree/main/Module01#osi-layer)
-
-![Red-Node toggle works](./pictures/jsworks.png)  
-
 
 ## Learning Goals
 
