@@ -11,7 +11,8 @@ The additional guide on how to setup the router was pretty good and easy to foll
 ## What was difficult?
 
 Well, there was that one point where the instruction gave an IP-address without the subnet mask that made us unable to access our router, that was not great. Also the switch from one guide to the other was difficult again, since the easy-to-follow-guide ended somewhere in the middle of a "round" of the other guide and you had to completely reorient yourself again.  
-Also unsure about what to make of the description of the setup of the module documentation which runs completely counter to the established format of the learning goals and tasks. Deeply confusing.
+Also unsure about what to make of the description of the setup of the module documentation which runs completely counter to the established format of the learning goals and tasks. Deeply confusing.  
+This LLM written module guide remains difficult to work with. The wording and the questions are not written in a comprehensible way, it is exceedingly obvious this was not written by a human or verified by a human. It is barely legible to someone who is still learning this, I'm not sure how legible it is to someone who already knows this.
 
 ## Exploration and show stoppers
 
