@@ -17,21 +17,21 @@ Connecting to the WAN in the task about port forwarding was unsuccessful and we 
 
 Configure IPv4 addressing, CIDR subnetting, default gateways, and routing tables.  
 
-**Evidence:** [Task 1](#task-1)[Task 4](#task-4)[Task 6](#task-6)
+**Evidence:** [Task 1](#task-1) [Task 4](#task-4) [Task 6](#task-6)
 
 <a id="lg2"></a>
 ### LG2
 
 Inspect and diagnose the core IP plumbing services: ARP, DHCP (DORA), DNS, and NAT.  
 
-**Evidence:** [Task 5](#task-5)[Task 7](#task-7)
+**Evidence:** [Task 5](#task-5) [Task 7](#task-7)
 
 <a id="lg3"></a>
 ### LG3
 
 Flash, configure, administer, and secure an OpenWrt edge router via SSH and the LuCI web interface — from factory firmware to a working pod LAN with a WAN uplink (eduroam, phone tether, or the class Wi-Fi).  
 
-**Evidence:** [Task 1](#task-1)[Task 2](#task-2)[Task 3](#task-3)[Task 4](#task-4)[Task 8](#task-8)
+**Evidence:** [Task 1](#task-1) [Task 2](#task-2) [Task 3](#task-3) [Task 4](#task-4) [Task 8](#task-8)
 
 <a id="lg4"></a>
 ### LG4
@@ -52,7 +52,7 @@ This is not ideal since the guide we worked with in class used steps that did no
 - The flash happens over ethernet because we want a stable connection.  
 ![OpenWrt-version](https://github.com/Svenjjamin/net-iot-hsbi-2026-portfolio/blob/main/Module02/pictures/schritt2_wrt_version.png)
 
-**Proves:** [LG3](#lg3)
+**Proves:** [LG1](#lg1)[LG3](#lg3)
 
 
 <a id="task-2"></a>
@@ -79,7 +79,7 @@ We connected to eduroam, we now have someones credentials on the router (which i
 ![uci show firewall](https://github.com/Svenjjamin/net-iot-hsbi-2026-portfolio/blob/main/Module02/pictures/schritt3_firewall_wan.png)  
 ![mqtt-evidence](https://github.com/Svenjjamin/net-iot-hsbi-2026-portfolio/blob/main/Module02/pictures/round4_mqtt.png)
 
-**Proves:** [LG3](#lg3)
+**Proves:** [LG1](#lg1) [LG3](#lg3)
 
 
 <a id="task-5"></a>
@@ -114,7 +114,7 @@ The rest of the task is provided, again, by Sven: [Task 6 by Sven](https://githu
 ### Task 7 — One door - port forwarding and NAT
 
 Somewhat related to this task: I had to setup a mesh-vpn from my laptop to my desktop pc, since my laptop was too weak for a software we are using in a different course and I wanted to access my desktop pc in class instead. And I used port forwarding to make sure I can only access the specific ports I need for my desktop-streaming software to access only that software and can only access it with my laptop's specific IP address. I also made some specific exceptions in my firewall for this exact use case. But that's just me doing extracurricular activities, not this task specifically.  
-[personal_port_forwaring](./pictures/ports.png)  
+![personal_port_forwarding](./pictures/ports.png)  
 
 This task however, we couldn't complete since we weren't in class and unable to get an IP-address for our WAN on Cudy. We believe that our personal experience with port forwarding is enough to substitute our learnings from this task.  
 Sven has provided a screenshot of us being unable to confirm an IP-address for the WAN:  
@@ -122,14 +122,14 @@ Sven has provided a screenshot of us being unable to confirm an IP-address for t
 ![wan-ip1](https://github.com/Svenjjamin/net-iot-hsbi-2026-portfolio/blob/main/Module02/pictures/round7_2.png)  
 
 
-**Proves:** [LG3](#lg3)
+**Proves:** [LG2](#lg2)
 
 <a id="task-8"></a>
 ### Task 8 — Handoff - take the router home
 
 [Task 8 by Sven](https://github.com/Svenjjamin/net-iot-hsbi-2026-portfolio/blob/main/Module02/ReadME.md)
 
-**Proves:** [LG3](#lg3)
+**Proves:** [LG3](#lg3) 
 
 <a id="task-9"></a>
 ### Task 9 — Why OpenWrt? - the router you can own
