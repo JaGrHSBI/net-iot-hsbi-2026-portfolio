@@ -1,4 +1,4 @@
-# Module 2
+# Module 3
 
 ## Learning Goals
 
@@ -35,19 +35,8 @@ Make the router the pod's gateway into the overlay, reach your Node-RED instance
 <a id="task-1"></a>
 ### Task 1 — Connect your router to the overlay
 
-1. Got bundle. 
-2. Installed. 
-3. Unpacked. 
-4. Checked.  
-![]()
-5. Interface ready.  
-![]()
-6. Firewall  
-![]()
-7. DNS  
-done. ![]()
-8. Test  
-done. ![]()
+Some step-by-step-screenshots from Sven:  
+[Sven's module 3](https://github.com/Svenjjamin/net-iot-hsbi-2026-portfolio/blob/main/Module03/ReadME.md)
 ![lighthousepan_from_LAN](./pictures/lighthouseping.png)
 
 **Proves:** [LG2](#lg2)
