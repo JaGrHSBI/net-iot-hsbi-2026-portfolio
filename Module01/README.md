@@ -1,5 +1,50 @@
 # Module 1
 
+## Learning Goals
+
+<a id="lg1"></a>
+### LG1
+
+Explain how this class works — learning goals as the contract, negotiable tasks, evidence in a portfolio — and start your own portfolio with a note on what you already know, what you expect, and who your pod is.  
+
+**Evidence:** [Introduction](#Introduction)
+
+<a id="lg2"></a>
+### LG2
+
+Explain publish/subscribe with an MQTT broker: the star topology, hierarchical topics, wildcards, and why decoupling producers from consumers is what makes an IoT system maintainable.  
+
+**Evidence:**  There's multiple things we've done that refer to these ideas: The first one is the debug-node: We were listening to all incoming signals from our stick, regardless of where they originated. The second one is that we could easily publish our message not just to our own M5-stick but to our neighbors as well. In a connected system this would've meant additional physical connections that also need physical connectors, in our case we just needed to publish to another topic as well.  
+
+
+<a id="lg3"></a>
+### LG3
+
+Build Node-RED flows that subscribe and publish, turn a physical button into a remote actuator action, and render live telemetry as a gauge, a chart, and a wildcard aggregation.  
+
+**Evidence:** [Task 3](#task3) [Task 4](#task4) [Task 5](#task5) [Task 7](#task7) and [the flow we exported at one point](./flows.json)  
+
+<a id="lg4"></a>
+### LG4
+
+Wire a digital 1-wire sensor, read its value over MQTT, and explain the declarative OTA loop (one line in setup.cpp → a fleet-wide deployment) and what it changes for a real fleet.  
+
+**Evidence:** [Task 6](#task-6)
+
+<a id="lg5"></a>
+### LG5
+
+Critically analyze the ISO/OSI 7-layer model against real TCP/IP in IoT systems (referencing RFC 3439 and RFC 1958), and quantify header overhead from a capture taken at the edge — the router, an ESP32 tap, or a provided dump — stating every assumption.  
+
+**Evidence:** Well, that task didn't really happen. But Sebastian and Max found a neat little artefact about this [here](https://learningnetwork.cisco.com/s/question/0D53i00000Kt5N1CAJ/overhead-and-payload-confusion). We've established, even in the PreStudy, that the OSI model doesn't factor in that there are cross-layer considerations to be had at all and in our [Study Log](#study-log) we referred to RFC 3439 already. A key point is that an overly elaborate layering system leads to increased complexity where instead simplicity is warrented.
+
+<a id="lg6"></a>
+### LG6
+
+Craft a system story that is concrete enough to pitch, spanning the computing continuum with named stakeholders, devices, and interfaces — and name the weakest link in it.  
+
+**Evidence:** See [Tasks described by Sven](https://github.com/Svenjjamin/net-iot-hsbi-2026-portfolio/blob/main/Module01/README.md) 
+
 ## Introduction
 ### Who I am
 
@@ -60,50 +105,6 @@ It is interesting how some protocols try to bypass the traditional layer boundar
 We really liked the overview this table gives over how OSI relates to TCP, Sebastian originally showed it to us.  
 [Link](https://github.com/SebasAbt/IOT_Baseline/tree/main/Module01#osi-layer)
 
-## Learning Goals
-
-<a id="lg1"></a>
-### LG1
-
-Explain how this class works — learning goals as the contract, negotiable tasks, evidence in a portfolio — and start your own portfolio with a note on what you already know, what you expect, and who your pod is.  
-
-**Evidence:** [Introduction](#Introduction)
-
-<a id="lg2"></a>
-### LG2
-
-Explain publish/subscribe with an MQTT broker: the star topology, hierarchical topics, wildcards, and why decoupling producers from consumers is what makes an IoT system maintainable.  
-
-**Evidence:**  There's multiple things we've done that refer to these ideas: The first one is the debug-node: We were listening to all incoming signals from our stick, regardless of where they originated. The second one is that we could easily publish our message not just to our own M5-stick but to our neighbors as well. In a connected system this would've meant additional physical connections that also need physical connectors, in our case we just needed to publish to another topic as well.  
-
-
-<a id="lg3"></a>
-### LG3
-
-Build Node-RED flows that subscribe and publish, turn a physical button into a remote actuator action, and render live telemetry as a gauge, a chart, and a wildcard aggregation.  
-
-**Evidence:** [Task 3](#task3) [Task 4](#task4) [Task 5](#task5) [Task 7](#task7) and [the flow we exported at one point](./flows.json)  
-
-<a id="lg4"></a>
-### LG4
-
-Wire a digital 1-wire sensor, read its value over MQTT, and explain the declarative OTA loop (one line in setup.cpp → a fleet-wide deployment) and what it changes for a real fleet.  
-
-**Evidence:** [Task 6](#task-6)
-
-<a id="lg5"></a>
-### LG5
-
-Critically analyze the ISO/OSI 7-layer model against real TCP/IP in IoT systems (referencing RFC 3439 and RFC 1958), and quantify header overhead from a capture taken at the edge — the router, an ESP32 tap, or a provided dump — stating every assumption.  
-
-**Evidence:** Well, that task didn't really happen. But Sebastian and Max found a neat little artefact about this [here](https://learningnetwork.cisco.com/s/question/0D53i00000Kt5N1CAJ/overhead-and-payload-confusion). We've established, even in the PreStudy, that the OSI model doesn't factor in that there are cross-layer considerations to be had at all and in our [Study Log](#study-log) we referred to RFC 3439 already. A key point is that an overly elaborate layering system leads to increased complexity where instead simplicity is warrented.
-
-<a id="lg6"></a>
-### LG6
-
-Craft a system story that is concrete enough to pitch, spanning the computing continuum with named stakeholders, devices, and interfaces — and name the weakest link in it.  
-
-**Evidence:** See [Tasks described by Sven](https://github.com/Svenjjamin/net-iot-hsbi-2026-portfolio/blob/main/Module01/README.md) 
 
 <a id="task1"></a>
 ## Task 1: Study in your pod
@@ -156,6 +157,8 @@ This actually took us surprisingly long since we had a typo in our topic and kep
 
 **Proves:** [LG3](#lg4)
 
+<a id="task7"></a>
+## Task 7+
 
 For the rest of the tasks see the [Tasks described by Sven](https://github.com/Svenjjamin/net-iot-hsbi-2026-portfolio/blob/main/Module01/README.md) 
  
